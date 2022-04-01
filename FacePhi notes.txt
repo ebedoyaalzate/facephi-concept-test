@@ -2,8 +2,5 @@ FacePhi notes
 enciar a evaluetePassiveLiveness 
 imageBuffer= bestImageTokenized
 
-
-rango de ips
-
 token 1 doc de identidad 
 token 2 templateRaw 
