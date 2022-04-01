@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "0eac827b-c15d-4a7c-bf1b-e7267494145e",
+		"name": "Ejemplo Bancolombia CO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authenticateFacial method 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "194",
+						"type": "text"
+					},
+					{
+						"key": "token-app",
+						"value": "76a6cca863330dd9946756355477e175c534639aee388731c606751122b722b285f28391a29e14cec8043490eeaf37ddb710ce68827ae05d84f6995083126954",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "AByOiCbsKM7wx3juynOgS5tivlVulEFu5ZDllvc7",
+						"type": "text"
+					},
+					{
+						"key": "app-name",
+						"value": "wompi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token1\": \"BASE64 IMAGEN\",\r\n    \"token2\": \"templateRaw\",\r\n    \"method\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-smartface.sort.uy/dev3/services/authenticateFacial",
+					"protocol": "https",
+					"host": [
+						"api-smartface",
+						"sort",
+						"uy"
+					],
+					"path": [
+						"dev3",
+						"services",
+						"authenticateFacial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extractDocumentDataWeb",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "194",
+						"type": "text"
+					},
+					{
+						"key": "token-app",
+						"value": "76a6cca863330dd9946756355477e175c534639aee388731c606751122b722b285f28391a29e14cec8043490eeaf37ddb710ce68827ae05d84f6995083126954",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "AByOiCbsKM7wx3juynOgS5tivlVulEFu5ZDllvc7",
+						"type": "text"
+					},
+					{
+						"key": "app-name",
+						"value": "wompi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"tokenFrontDocument\" : \"BASE64 FrontDocument\",\r\n\"tokenBackDocument\" : \"BASE64 BackDocument\",\r\n\"countryCode\" : \"ISO alfa 3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-smartface.sort.uy/dev3/services/extractDocumentDataWeb",
+					"protocol": "https",
+					"host": [
+						"api-smartface",
+						"sort",
+						"uy"
+					],
+					"path": [
+						"dev3",
+						"services",
+						"extractDocumentDataWeb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluatePassiveLivenessToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "194",
+						"type": "text"
+					},
+					{
+						"key": "token-app",
+						"value": "76a6cca863330dd9946756355477e175c534639aee388731c606751122b722b285f28391a29e14cec8043490eeaf37ddb710ce68827ae05d84f6995083126954",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "AByOiCbsKM7wx3juynOgS5tivlVulEFu5ZDllvc7",
+						"type": "text"
+					},
+					{
+						"key": "app-name",
+						"value": "wompi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"imageBuffer\": \"BASE64 TOKENIZADO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-smartface.sort.uy/dev3/services/evaluatePassiveLivenessToken",
+					"protocol": "https",
+					"host": [
+						"api-smartface",
+						"sort",
+						"uy"
+					],
+					"path": [
+						"dev3",
+						"services",
+						"evaluatePassiveLivenessToken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
