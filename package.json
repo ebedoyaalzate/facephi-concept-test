@@ -1,0 +1,50 @@
+{
+    "name": "selphi-widget-vue-example",
+    "version": "5.13.1",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "builds": "cross-env BUILD_TYPE=development vue-cli-service build",
+        "build": "cross-env BUILD_TYPE=development vue-cli-service build & serve -s dist",
+        "publish": "cross-env BUILD_TYPE=production vue-cli-service build",
+        "clean": "npm --save-dev uninstall @facephi/selphi-widget-web && npx rimraf facephi-selphi-widget-web-*.tgz && npx rimraf ./dist",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@facephi/selphi-widget-web": "file:../../lib/facephi-selphi-widget-web-5.13.1.tgz",
+        "@facephi/selphid-widget-web": "file:../../fphi-selphid-widget-web-3.1.3.0/lib/facephi-selphid-widget-web-3.1.3.tgz",
+        "bootstrap": "5.1.3",
+        "bootstrap-vue": "2.21.2",
+        "core-js": "3.6.5",
+        "vue": "3.0.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "4.5.0",
+        "@vue/cli-plugin-eslint": "4.5.0",
+        "@vue/cli-service": "4.5.0",
+        "@vue/compiler-sfc": "3.0.0",
+        "babel-eslint": "10.1.0",
+        "cross-env": "7.0.3",
+        "eslint": "6.7.2",
+        "eslint-plugin-vue": "7.0.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/vue3-essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}

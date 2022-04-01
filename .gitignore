@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+yarn-error.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Debug logs (i.e. npm & netlify)
+*-debug.log
+
+.env.*
