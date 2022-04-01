@@ -1,4 +1,5 @@
 <template>
+  <h1>Face Identifier</h1> 
   <div class="container p-3">
       <div class="row h-100">
           <!-- Contenedor del widget web SelphID -->
@@ -288,5 +289,16 @@ export default {
 </script>
 
 <style>
+#app {
+	width: 100vw;
+	height: 100vh;
+}
 
+html, body {
+	height: 100%;
+}
+
+.min-h-100 {
+  min-height: 100% !important;
+}
 </style>

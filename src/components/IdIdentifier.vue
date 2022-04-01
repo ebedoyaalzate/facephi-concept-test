@@ -1,4 +1,5 @@
 <template>
+  <h1>ID Identifier</h1>
   <div class="container p-3">
     <div class="row h-100">
         <!-- Contenedor del widget web SelphID -->
@@ -155,6 +156,7 @@ export default {
             }
 
             this.isWidgetEnabled = false;
+            this.$emit('id-identified', extractionResult.detail.images)
         },
 
         onUserCancelled: function () {
@@ -220,10 +222,5 @@ export default {
 </script>
 
 <style>
-facephi-selphi {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
+
 </style>

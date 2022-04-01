@@ -10,7 +10,16 @@ export default {
 			isLive: true,
 			faceIdentified: false,
 		}
-	}
+	},
+  methods: {
+    onFaceExtract(event) {
+      console.log('from app', event)
+      this.faceIdentified = true
+    },
+    onExtractId(event) {
+      console.log('from app', event)
+    }
+  }
 }
 </script>
 
@@ -39,8 +48,8 @@ html, body {
     </header>
 
     <main class="flex-grow-1 d-flex align-items-stretch">
-        <face-identifier v-if="!faceIdentified" @face-identified="() => faceIdentified = true"></face-identifier>
-        <id-identifier v-if="faceIdentified"></id-identifier>
+        <face-identifier v-if="!faceIdentified" @face-identified="onFaceExtract"></face-identifier>
+        <id-identifier v-if="faceIdentified" @id-identified="onExtractId"></id-identifier>
     </main>
 
     <footer class="bg-dark text-white">
