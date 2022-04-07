@@ -58,10 +58,6 @@ html, body {
   <main class="flex-grow-1 d-flex align-items-stretch">
     <face-identifier v-if="!faceIdentified" @face-identified="onFaceExtract"></face-identifier>
     <id-identifier v-if="faceIdentified" @id-identified="onIdExtract"></id-identifier>
-
-    <div v-if="idData">{{ idData[0] }}
-      <img :src="idData[0].src"/>
-    </div>
   </main>
 
   <footer class="bg-dark text-white">

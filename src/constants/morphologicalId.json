@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "0734f484-468d-4704-b080-c6d00d89bb83",
+		"name": "DocumentValidation Wompi CO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "194",
+						"type": "text"
+					},
+					{
+						"key": "token-app",
+						"value": "76a6cca863330dd9946756355477e175c534639aee388731c606751122b722b285f28391a29e14cec8043490eeaf37ddb710ce68827ae05d84f6995083126954",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "AByOiCbsKM7wx3juynOgS5tivlVulEFu5ZDllvc7",
+						"type": "text"
+					},
+					{
+						"key": "app-name",
+						"value": "wompi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merchantIdScanReference\": \"xxxxx-xxxxx-xxxxx-xxxxx-xxxxx\",\r\n  \"frontsideImage\": \"BASE64 FrontDocument\",\r\n  \"backsideImage\": \"BASE64 BackDocument\",\r\n  \"country\": \"ISO alfa 3\",\r\n  \"idType\": \"ID_CARD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-smartface.sort.uy/dev3/verify/documentValidation/start",
+					"protocol": "https",
+					"host": [
+						"api-smartface",
+						"sort",
+						"uy"
+					],
+					"path": [
+						"dev3",
+						"verify",
+						"documentValidation",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "194",
+						"type": "text"
+					},
+					{
+						"key": "token-app",
+						"value": "76a6cca863330dd9946756355477e175c534639aee388731c606751122b722b285f28391a29e14cec8043490eeaf37ddb710ce68827ae05d84f6995083126954",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "AByOiCbsKM7wx3juynOgS5tivlVulEFu5ZDllvc7",
+						"type": "text"
+					},
+					{
+						"key": "app-name",
+						"value": "wompi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scanReference\": \"xxxxx-xxxxx-xxxxx-xxxxx-xxxxx\",\r\n  \"type\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-smartface.sort.uy/dev3/verify/documentValidation/status",
+					"protocol": "https",
+					"host": [
+						"api-smartface",
+						"sort",
+						"uy"
+					],
+					"path": [
+						"dev3",
+						"verify",
+						"documentValidation",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "194",
+						"type": "text"
+					},
+					{
+						"key": "token-app",
+						"value": "76a6cca863330dd9946756355477e175c534639aee388731c606751122b722b285f28391a29e14cec8043490eeaf37ddb710ce68827ae05d84f6995083126954",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "AByOiCbsKM7wx3juynOgS5tivlVulEFu5ZDllvc7",
+						"type": "text"
+					},
+					{
+						"key": "app-name",
+						"value": "wompi",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scanReference\": \"xxxxx-xxxxx-xxxxx-xxxxx-xxxxx\",\r\n  \"type\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-smartface.sort.uy/dev3/verify/documentValidation/data",
+					"protocol": "https",
+					"host": [
+						"api-smartface",
+						"sort",
+						"uy"
+					],
+					"path": [
+						"dev3",
+						"verify",
+						"documentValidation",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
